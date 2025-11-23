@@ -1,0 +1,5 @@
+{
+  "name": "AeroGuard: Missile Trajectory Sim",
+  "description": "A 3D tactical simulation of missile interception trajectories with AI-powered engagement analysis.",
+  "requestFramePermissions": []
+}
