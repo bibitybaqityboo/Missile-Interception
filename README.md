@@ -8,6 +8,8 @@ A 3D tactical simulation of missile interception. Tune the engagement, launch an
 against an evasive bogey, and watch it play out with live telemetry, three camera views and an
 optional AI debrief.
 
+**Play it in your browser: https://bibitybaqityboo.github.io/Missile-Interception/**
+
 View the original app in AI Studio: https://ai.studio/apps/drive/1u403MbBDBFpjqdAkri2lcfyl7W2ZWG7w
 
 ## Features
@@ -48,3 +50,12 @@ In orbit mode: drag to rotate, right-drag to pan, scroll to zoom.
    `npm run dev`
 
 `npm run build` produces a static bundle in `dist/`.
+
+## Deployment
+
+Every push to `main` is built and published to GitHub Pages by
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml); pull requests just check that the
+site builds. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+
+The hosted build has no Gemini key, so the AI advisor is offline there. Don't add one as a build
+secret: anything baked into the bundle is readable by every visitor.

@@ -6,6 +6,8 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      // Relative asset URLs so the build works from any subpath (e.g. GitHub Pages project sites).
+      base: './',
       server: {
         port: 3000,
         host: '0.0.0.0',
